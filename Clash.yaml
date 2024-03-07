@@ -213,6 +213,7 @@ proxies:
   - {name: IE 2 → skywrt, server: 52.178.198.18, port: 56702, type: ss, cipher: chacha20-ietf-poly1305, password: VFoO6khsxjRAkRvNleB1sI, udp: true}
   - {name: IT 1 → skywrt, server: aws.daxun.cyou, port: 38888, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /daxun/us1, headers: {Host: www.baidu.com}}, udp: true}
   - {name: IT 2 → skywrt, server: aws.daxun.cyou, port: 38889, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /daxun/us2, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: IT 3 → skywrt, server: aws.daxun.cyou, port: 38887, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /daxun/us3, headers: {Host: www.baidu.com}}, udp: true}
   - {name: KE 1 → skywrt, server: 62.12.116.66, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: LU 1 → skywrt, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
   - {name: LU 2 → skywrt, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
@@ -253,114 +254,119 @@ proxies:
   - {name: 🇨🇳 CN 10 → skywrt, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
   - {name: 🇨🇳 CN 100 → skywrt, server: 231103level4.unclemanco.com, port: 19996, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 101 → skywrt, server: rk2.izoizoizo.top, port: 20810, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 102 → skywrt, server: 231103level3.unclemanco.com, port: 26700, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 103 → skywrt, server: rk2.izoizoizo.top, port: 26860, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 104 → skywrt, server: 111.12.60.117, port: 777, type: ss, cipher: chacha20-ietf-poly1305, password: fd3edf71-5692-4d08-8a23-a9d22b616de4, udp: true}
-  - {name: 🇨🇳 CN 105 → skywrt, server: xibaozi.19890604.day, port: 10847, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 106 → skywrt, server: 231103level1.unclemanco.com, port: 2687, type: ssr, cipher: aes-256-cfb, password: fs23l/, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 107 → skywrt, server: 231103level3.unclemanco.com, port: 1901, type: ssr, cipher: chacha20-ietf, password: ay2loud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 108 → skywrt, server: 231103level4.unclemanco.com, port: 6450, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 109 → skywrt, server: rk2.izoizoizo.top, port: 48621, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 102 → skywrt, server: gz.daxun.cyou, port: 38019, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 103 → skywrt, server: 231103level3.unclemanco.com, port: 26700, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 104 → skywrt, server: rk2.izoizoizo.top, port: 26860, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 105 → skywrt, server: 111.12.60.117, port: 777, type: ss, cipher: chacha20-ietf-poly1305, password: fd3edf71-5692-4d08-8a23-a9d22b616de4, udp: true}
+  - {name: 🇨🇳 CN 106 → skywrt, server: xibaozi.19890604.day, port: 10847, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 107 → skywrt, server: 231103level1.unclemanco.com, port: 2687, type: ssr, cipher: aes-256-cfb, password: fs23l/, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 108 → skywrt, server: 231103level3.unclemanco.com, port: 1901, type: ssr, cipher: chacha20-ietf, password: ay2loud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 109 → skywrt, server: 231103level4.unclemanco.com, port: 6450, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 11 → skywrt, server: 231103levelx.unclemanco.com, port: 20047, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 110 → skywrt, server: rk2.izoizoizo.top, port: 28185, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 111 → skywrt, server: tank.19890604.day, port: 10830, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 113 → skywrt, server: 231103levelx.unclemanco.com, port: 11110, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 114 → skywrt, server: rk2.izoizoizo.top, port: 31983, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 115 → skywrt, server: 231103level3.unclemanco.com, port: 26001, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 116 → skywrt, server: 231103level3.unclemanco.com, port: 37862, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 117 → skywrt, server: 231103level1.unclemanco.com, port: 10020, type: ssr, cipher: aes-256-cfb, password: aa2x2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 118 → skywrt, server: 231103level3.unclemanco.com, port: 20016, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 119 → skywrt, server: jp01.jjjjjj.icu, port: 30207, type: ss, cipher: chacha20-ietf-poly1305, password: bbaa6c10-0800-4e27-871b-c63b1253d359, udp: true}
+  - {name: 🇨🇳 CN 110 → skywrt, server: rk2.izoizoizo.top, port: 48621, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 111 → skywrt, server: rk2.izoizoizo.top, port: 28185, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 112 → skywrt, server: tank.19890604.day, port: 10830, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 114 → skywrt, server: 231103levelx.unclemanco.com, port: 11110, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 115 → skywrt, server: rk2.izoizoizo.top, port: 31983, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 116 → skywrt, server: 231103level3.unclemanco.com, port: 26001, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 117 → skywrt, server: 231103level3.unclemanco.com, port: 37862, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 118 → skywrt, server: 231103level1.unclemanco.com, port: 10020, type: ssr, cipher: aes-256-cfb, password: aa2x2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 119 → skywrt, server: 231103level3.unclemanco.com, port: 20016, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 12 → skywrt, server: 231103level4.unclemanco.com, port: 10013, type: ssr, cipher: aes-256-cfb, password: aa2sacs/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 120 → skywrt, server: 231103level2.unclemanco.com, port: 38010, type: ssr, cipher: aes-256-cfb, password: "dajkdr&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 121 → skywrt, server: 231103level1.unclemanco.com, port: 20001, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 122 → skywrt, server: xijinping.19890604.day, port: 10813, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 124 → skywrt, server: ddns.olucloud.subapi.cc, port: 26666, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇨🇳 CN 125 → skywrt, server: xibaozi.19890604.day, port: 10837, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 126 → skywrt, server: ddns.olucloud.subapi.cc, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇨🇳 CN 127 → skywrt, server: rk2.izoizoizo.top, port: 36722, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 128 → skywrt, server: rk2.izoizoizo.top, port: 40465, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 129 → skywrt, server: rk2.izoizoizo.top, port: 19117, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 120 → skywrt, server: jp01.jjjjjj.icu, port: 30207, type: ss, cipher: chacha20-ietf-poly1305, password: bbaa6c10-0800-4e27-871b-c63b1253d359, udp: true}
+  - {name: 🇨🇳 CN 121 → skywrt, server: 231103level2.unclemanco.com, port: 38010, type: ssr, cipher: aes-256-cfb, password: "dajkdr&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 122 → skywrt, server: 231103level1.unclemanco.com, port: 20001, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 123 → skywrt, server: xijinping.19890604.day, port: 10813, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 125 → skywrt, server: ddns.olucloud.subapi.cc, port: 26666, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
+  - {name: 🇨🇳 CN 126 → skywrt, server: xibaozi.19890604.day, port: 10837, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 127 → skywrt, server: ddns.olucloud.subapi.cc, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
+  - {name: 🇨🇳 CN 128 → skywrt, server: rk2.izoizoizo.top, port: 36722, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 129 → skywrt, server: rk2.izoizoizo.top, port: 40465, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
   - {name: 🇨🇳 CN 13 → skywrt, server: lsgy.lanxingyun.cn, port: 35791, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
-  - {name: 🇨🇳 CN 130 → skywrt, server: 231103level4.unclemanco.com, port: 2214, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&sdja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 132 → skywrt, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
-  - {name: 🇨🇳 CN 133 → skywrt, server: 231103level3.unclemanco.com, port: 29999, type: ssr, cipher: chacha20-ietf, password: ayucles1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 134 → skywrt, server: 231103level1.unclemanco.com, port: 27777, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 138 → skywrt, server: 231103level3.unclemanco.com, port: 20010, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 139 → skywrt, server: 231103level4.unclemanco.com, port: 19982, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 130 → skywrt, server: rk2.izoizoizo.top, port: 19117, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 131 → skywrt, server: 231103level4.unclemanco.com, port: 2214, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&sdja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 133 → skywrt, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
+  - {name: 🇨🇳 CN 134 → skywrt, server: 231103level3.unclemanco.com, port: 29999, type: ssr, cipher: chacha20-ietf, password: ayucles1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 135 → skywrt, server: gz.daxun.cyou, port: 38015, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 136 → skywrt, server: 231103level1.unclemanco.com, port: 27777, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 14 → skywrt, server: gz.daxun.cyou, port: 38005, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 140 → skywrt, server: 231103level2.unclemanco.com, port: 20060, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 142 → skywrt, server: 231103level4.unclemanco.com, port: 36590, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 143 → skywrt, server: 231103level4.unclemanco.com, port: 10059, type: ssr, cipher: aes-256-cfb, password: 2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 144 → skywrt, server: east.2333lol.fuckddos.shop, port: 24515, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 145 → skywrt, server: rk2.izoizoizo.top, port: 47146, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 146 → skywrt, server: 111.12.60.114, port: 787, type: ss, cipher: chacha20-ietf-poly1305, password: fd3edf71-5692-4d08-8a23-a9d22b616de4, udp: true}
-  - {name: 🇨🇳 CN 147 → skywrt, server: rk2.izoizoizo.top, port: 21059, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 148 → skywrt, server: 231103level2.unclemanco.com, port: 29008, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 140 → skywrt, server: 231103level3.unclemanco.com, port: 20010, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 141 → skywrt, server: 231103level4.unclemanco.com, port: 19982, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 142 → skywrt, server: 231103level2.unclemanco.com, port: 20060, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 144 → skywrt, server: gz.daxun.cyou, port: 26043, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 145 → skywrt, server: 231103level4.unclemanco.com, port: 36590, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 146 → skywrt, server: 231103level4.unclemanco.com, port: 10059, type: ssr, cipher: aes-256-cfb, password: 2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 147 → skywrt, server: east.2333lol.fuckddos.shop, port: 24515, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 148 → skywrt, server: rk2.izoizoizo.top, port: 47146, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 149 → skywrt, server: 111.12.60.114, port: 787, type: ss, cipher: chacha20-ietf-poly1305, password: fd3edf71-5692-4d08-8a23-a9d22b616de4, udp: true}
   - {name: 🇨🇳 CN 15 → skywrt, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 🇨🇳 CN 150 → skywrt, server: east.2333lol.fuckddos.shop, port: 24551, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 151 → skywrt, server: gz.daxun.cyou, port: 26035, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 152 → skywrt, server: lsgy.lanxingyun.cn, port: 13163, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
-  - {name: 🇨🇳 CN 153 → skywrt, server: 231103level4.unclemanco.com, port: 36592, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 155 → skywrt, server: rk2.izoizoizo.top, port: 49931, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 157 → skywrt, server: 231103level2.unclemanco.com, port: 29602, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 158 → skywrt, server: 231103level3.unclemanco.com, port: 1875, type: ssr, cipher: chacha20-ietf, password: ayucew2, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 159 → skywrt, server: 231103level4.unclemanco.com, port: 6558, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 150 → skywrt, server: rk2.izoizoizo.top, port: 21059, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 151 → skywrt, server: 231103level2.unclemanco.com, port: 29008, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 153 → skywrt, server: east.2333lol.fuckddos.shop, port: 24551, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 154 → skywrt, server: gz.daxun.cyou, port: 26035, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 155 → skywrt, server: lsgy.lanxingyun.cn, port: 13163, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
+  - {name: 🇨🇳 CN 156 → skywrt, server: 231103level4.unclemanco.com, port: 36592, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 158 → skywrt, server: rk2.izoizoizo.top, port: 49931, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
   - {name: 🇨🇳 CN 16 → skywrt, server: 231103level3.unclemanco.com, port: 20011, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 160 → skywrt, server: east.2333lol.fuckddos.shop, port: 36946, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 161 → skywrt, server: 231103level2.unclemanco.com, port: 20040, type: ssr, cipher: aes-256-cfb, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 163 → skywrt, server: 231103level2.unclemanco.com, port: 1000, type: ssr, cipher: chacha20-ietf, password: ayucjrsll, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 165 → skywrt, server: 231103level2.unclemanco.com, port: 5555, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 166 → skywrt, server: rk2.izoizoizo.top, port: 26276, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 167 → skywrt, server: east.2333lol.fuckddos.shop, port: 35207, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 169 → skywrt, server: 231103level4.unclemanco.com, port: 3035, type: ssr, cipher: aes-256-cfb, password: aa2sda31a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 160 → skywrt, server: 231103level2.unclemanco.com, port: 29602, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 161 → skywrt, server: 231103level3.unclemanco.com, port: 1875, type: ssr, cipher: chacha20-ietf, password: ayucew2, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 162 → skywrt, server: 231103level4.unclemanco.com, port: 6558, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 163 → skywrt, server: east.2333lol.fuckddos.shop, port: 36946, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 164 → skywrt, server: 231103level2.unclemanco.com, port: 20040, type: ssr, cipher: aes-256-cfb, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 166 → skywrt, server: 231103level2.unclemanco.com, port: 1000, type: ssr, cipher: chacha20-ietf, password: ayucjrsll, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 168 → skywrt, server: 231103level2.unclemanco.com, port: 5555, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 169 → skywrt, server: rk2.izoizoizo.top, port: 26276, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
   - {name: 🇨🇳 CN 17 → skywrt, server: rk2.izoizoizo.top, port: 12042, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 170 → skywrt, server: xibaozi.19890604.day, port: 10836, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 171 → skywrt, server: 231103level3.unclemanco.com, port: 20006, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 172 → skywrt, server: 231103level2.unclemanco.com, port: 2790, type: ssr, cipher: aes-256-cfb, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 174 → skywrt, server: kr2.indianonlinejob2.com, port: 20014, type: ss, cipher: chacha20-ietf-poly1305, password: a9464b90-986d-4253-b950-882537c5ca9e, udp: true}
-  - {name: 🇨🇳 CN 175 → skywrt, server: lsgy.lanxingyun.cn, port: 33111, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
-  - {name: 🇨🇳 CN 176 → skywrt, server: 231103level3.unclemanco.com, port: 20452, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 177 → skywrt, server: gz.daxun.cyou, port: 26041, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 170 → skywrt, server: east.2333lol.fuckddos.shop, port: 35207, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 172 → skywrt, server: 231103level4.unclemanco.com, port: 3035, type: ssr, cipher: aes-256-cfb, password: aa2sda31a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 173 → skywrt, server: xibaozi.19890604.day, port: 10836, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 174 → skywrt, server: 231103level3.unclemanco.com, port: 20006, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 175 → skywrt, server: 231103level2.unclemanco.com, port: 2790, type: ssr, cipher: aes-256-cfb, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 176 → skywrt, server: gz.daxun.cyou, port: 38067, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 178 → skywrt, server: kr2.indianonlinejob2.com, port: 20014, type: ss, cipher: chacha20-ietf-poly1305, password: a9464b90-986d-4253-b950-882537c5ca9e, udp: true}
+  - {name: 🇨🇳 CN 179 → skywrt, server: lsgy.lanxingyun.cn, port: 33111, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
   - {name: 🇨🇳 CN 18 → skywrt, server: east.2333lol.fuckddos.shop, port: 30128, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 180 → skywrt, server: 231103level2.unclemanco.com, port: 19998, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 182 → skywrt, server: rk2.izoizoizo.top, port: 42281, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 183 → skywrt, server: 231103level2.unclemanco.com, port: 2200, type: ssr, cipher: aes-256-cfb, password: "dajsdkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 184 → skywrt, server: rk2.izoizoizo.top, port: 46091, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 185 → skywrt, server: 231103level4.unclemanco.com, port: 11102, type: ssr, cipher: aes-256-cfb, password: "d1da&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 187 → skywrt, server: 231103level1.unclemanco.com, port: 5004, type: ssr, cipher: chacha20-ietf, password: ayucl12s1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 188 → skywrt, server: 231103level3.unclemanco.com, port: 1823, type: ssr, cipher: chacha20-ietf, password: ayuclsaa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 180 → skywrt, server: 231103level3.unclemanco.com, port: 20452, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 181 → skywrt, server: gz.daxun.cyou, port: 26041, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 184 → skywrt, server: 231103level2.unclemanco.com, port: 19998, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 186 → skywrt, server: rk2.izoizoizo.top, port: 42281, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 187 → skywrt, server: 231103level2.unclemanco.com, port: 2200, type: ssr, cipher: aes-256-cfb, password: "dajsdkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 188 → skywrt, server: rk2.izoizoizo.top, port: 46091, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 189 → skywrt, server: 231103level4.unclemanco.com, port: 11102, type: ssr, cipher: aes-256-cfb, password: "d1da&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 19 → skywrt, server: 111.12.60.29, port: 2200, type: ss, cipher: chacha20-ietf-poly1305, password: fd3edf71-5692-4d08-8a23-a9d22b616de4, udp: true}
-  - {name: 🇨🇳 CN 191 → skywrt, server: hk03.jjjjjj.icu, port: 44552, type: ss, cipher: chacha20-ietf-poly1305, password: bbaa6c10-0800-4e27-871b-c63b1253d359, udp: true}
-  - {name: 🇨🇳 CN 194 → skywrt, server: xijinping.19890604.day, port: 10818, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 195 → skywrt, server: 231103level3.unclemanco.com, port: 20029, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 196 → skywrt, server: 231103level4.unclemanco.com, port: 9666, type: ssr, cipher: aes-256-cfb, password: aa2sda31a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 197 → skywrt, server: rk2.izoizoizo.top, port: 40460, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 198 → skywrt, server: rk2.izoizoizo.top, port: 34507, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 199 → skywrt, server: lsgy.lanxingyun.cn, port: 22225, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
+  - {name: 🇨🇳 CN 190 → skywrt, server: gz.daxun.cyou, port: 38007, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 192 → skywrt, server: 231103level1.unclemanco.com, port: 5004, type: ssr, cipher: chacha20-ietf, password: ayucl12s1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 193 → skywrt, server: 231103level3.unclemanco.com, port: 1823, type: ssr, cipher: chacha20-ietf, password: ayuclsaa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 196 → skywrt, server: hk03.jjjjjj.icu, port: 44552, type: ss, cipher: chacha20-ietf-poly1305, password: bbaa6c10-0800-4e27-871b-c63b1253d359, udp: true}
+  - {name: 🇨🇳 CN 199 → skywrt, server: xijinping.19890604.day, port: 10818, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 2 → skywrt, server: xijinping.19890604.day, port: 10817, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 20 → skywrt, server: 231103level2.unclemanco.com, port: 10057, type: ssr, cipher: aes-256-cfb, password: 2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 200 → skywrt, server: rk2.izoizoizo.top, port: 30337, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 201 → skywrt, server: gz.daxun.cyou, port: 26042, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 206 → skywrt, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇨🇳 CN 207 → skywrt, server: east.2333lol.fuckddos.shop, port: 12347, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 208 → skywrt, server: east.2333lol.fuckddos.shop, port: 39776, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 209 → skywrt, server: rk2.izoizoizo.top, port: 21038, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 200 → skywrt, server: 231103level3.unclemanco.com, port: 20029, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 201 → skywrt, server: 231103level4.unclemanco.com, port: 9666, type: ssr, cipher: aes-256-cfb, password: aa2sda31a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 202 → skywrt, server: rk2.izoizoizo.top, port: 40460, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 203 → skywrt, server: rk2.izoizoizo.top, port: 34507, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 204 → skywrt, server: lsgy.lanxingyun.cn, port: 22225, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
+  - {name: 🇨🇳 CN 205 → skywrt, server: rk2.izoizoizo.top, port: 30337, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
   - {name: 🇨🇳 CN 21 → skywrt, server: 231103level2.unclemanco.com, port: 6042, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 210 → skywrt, server: 231103level2.unclemanco.com, port: 39003, type: ssr, cipher: aes-256-cfb, password: ayds23sd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 213 → skywrt, server: 231103levelx.unclemanco.com, port: 2204, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 214 → skywrt, server: 231103level1.unclemanco.com, port: 28006, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 217 → skywrt, server: 231103level2.unclemanco.com, port: 1234, type: ssr, cipher: aes-256-cfb, password: ay232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 218 → skywrt, server: rk2.izoizoizo.top, port: 43505, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 220 → skywrt, server: 231103level3.unclemanco.com, port: 20004, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 222 → skywrt, server: wqfuinwqffq.dfcloud.xyz, port: 30818, type: ss, cipher: chacha20-ietf-poly1305, password: 8e949d75-3510-4678-8593-3c5032dd931a, udp: true}
-  - {name: 🇨🇳 CN 223 → skywrt, server: 231103level2.unclemanco.com, port: 1001, type: ssr, cipher: chacha20-ietf, password: fsfal2, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 225 → skywrt, server: 231103level4.unclemanco.com, port: 1034, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 226 → skywrt, server: east.2333lol.fuckddos.shop, port: 21337, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 227 → skywrt, server: east.2333lol.fuckddos.shop, port: 25111, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 228 → skywrt, server: 231103level3.unclemanco.com, port: 20021, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 229 → skywrt, server: lsgy.lanxingyun.cn, port: 20263, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
+  - {name: 🇨🇳 CN 210 → skywrt, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
+  - {name: 🇨🇳 CN 211 → skywrt, server: east.2333lol.fuckddos.shop, port: 12347, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 212 → skywrt, server: east.2333lol.fuckddos.shop, port: 39776, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 213 → skywrt, server: rk2.izoizoizo.top, port: 21038, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 214 → skywrt, server: 231103level2.unclemanco.com, port: 39003, type: ssr, cipher: aes-256-cfb, password: ayds23sd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 215 → skywrt, server: gz.daxun.cyou, port: 26038, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 218 → skywrt, server: 231103levelx.unclemanco.com, port: 2204, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 219 → skywrt, server: 231103level1.unclemanco.com, port: 28006, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 222 → skywrt, server: 231103level2.unclemanco.com, port: 1234, type: ssr, cipher: aes-256-cfb, password: ay232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 223 → skywrt, server: rk2.izoizoizo.top, port: 43505, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 225 → skywrt, server: 231103level3.unclemanco.com, port: 20004, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 227 → skywrt, server: wqfuinwqffq.dfcloud.xyz, port: 30818, type: ss, cipher: chacha20-ietf-poly1305, password: 8e949d75-3510-4678-8593-3c5032dd931a, udp: true}
+  - {name: 🇨🇳 CN 228 → skywrt, server: 231103level2.unclemanco.com, port: 1001, type: ssr, cipher: chacha20-ietf, password: fsfal2, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 23 → skywrt, server: 231103level4.unclemanco.com, port: 39001, type: ssr, cipher: aes-256-cfb, password: "dajkl&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 230 → skywrt, server: 231103level4.unclemanco.com, port: 1034, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 231 → skywrt, server: east.2333lol.fuckddos.shop, port: 21337, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 232 → skywrt, server: east.2333lol.fuckddos.shop, port: 25111, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 233 → skywrt, server: 231103level3.unclemanco.com, port: 20021, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 234 → skywrt, server: lsgy.lanxingyun.cn, port: 20263, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
   - {name: 🇨🇳 CN 24 → skywrt, server: 231103level2.unclemanco.com, port: 1900, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 25 → skywrt, server: xibaozi.19890604.day, port: 10850, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 26 → skywrt, server: 231103level2.unclemanco.com, port: 2400, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
@@ -434,14 +440,8 @@ proxies:
   - {name: 🇨🇳 TW 8 → skywrt, server: c11.twtc.dynu.net, port: 13989, type: trojan, password: bc22f8b6-a366-4c09-812f-64da5a6a15b1, sni: c11.twtc.dynu.net, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 9 → skywrt, server: e001.panda003.net, port: 2003, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
   - {name: 🇩🇪 DE 1 → skywrt, server: 130.162.47.123, port: 6854, type: vmess, uuid: b5f7e932-f730-4ad2-b425-40977b9db332, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇩🇪 DE 2 → skywrt, server: gz.daxun.cyou, port: 38019, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE 3 → skywrt, server: 217.160.45.31, port: 8880, type: vmess, uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇩🇪 DE 4 → skywrt, server: gz.daxun.cyou, port: 38015, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE 5 → skywrt, server: gz.daxun.cyou, port: 26043, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE 6 → skywrt, server: gz.daxun.cyou, port: 38067, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE 7 → skywrt, server: gz.daxun.cyou, port: 38007, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE 8 → skywrt, server: 159.69.12.205, port: 25365, type: ss, cipher: aes-128-gcm, password: "TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON", udp: true}
-  - {name: 🇩🇪 DE 9 → skywrt, server: gz.daxun.cyou, port: 26038, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE 2 → skywrt, server: 217.160.45.31, port: 8880, type: vmess, uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇩🇪 DE 3 → skywrt, server: 159.69.12.205, port: 25365, type: ss, cipher: aes-128-gcm, password: "TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON", udp: true}
   - {name: 🇪🇸 ES 1 → skywrt, server: 5.188.181.201, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
   - {name: 🇪🇸 ES 2 → skywrt, server: 5.188.181.201, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
   - {name: 🇪🇸 ES 3 → skywrt, server: 176.120.74.142, port: 443, type: vmess, uuid: 75695f5a-b6af-44f4-9983-ae250b53ff9c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: internet.life.com.by}}, udp: true}
@@ -525,7 +525,8 @@ proxies:
   - {name: 🇰🇷 KR 5 → skywrt, server: p234.panda004.net, port: 43396, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
   - {name: 🇰🇷 KR 6 → skywrt, server: p110.panda001.net, port: 54345, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
   - {name: 🇰🇷 KR 7 → skywrt, server: kr.yydsii.com, port: 42752, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr.yydsii.com}}, udp: true}
-  - {name: 🇰🇷 KR 8 → skywrt, server: p231.panda004.net, port: 4375, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇰🇷 KR 8 → skywrt, server: gz.daxun.cyou, port: 26042, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 9 → skywrt, server: p231.panda004.net, port: 4375, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
   - {name: 🇳🇱 NL 1 → skywrt, server: 103.214.68.57, port: 10003, type: trojan, password: 6x8HcghsjS, sni: yes998.chickenkiller.com, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 NL 10 → skywrt, server: 188.114.99.0, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ophelia.mom}}, udp: true}
   - {name: 🇳🇱 NL 11 → skywrt, server: masting.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: XvK0ltH67Xhv9ht9RhYsFy, udp: true}
@@ -560,33 +561,33 @@ proxies:
   - {name: 🇸🇬 SG 8 → skywrt, server: 172.104.32.154, port: 48001, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 SG 9 → skywrt, server: 103.172.116.103, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
   - {name: 🇺🇸 US 1 → skywrt, server: 38.121.43.51, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇸 US 10 → skywrt, server: de-01.cloudlion.me, port: 8080, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de-01.cloudlion.me}}, udp: true}
-  - {name: 🇺🇸 US 11 → skywrt, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
-  - {name: 🇺🇸 US 12 → skywrt, server: 66.42.84.121, port: 443, type: trojan, password: wkmY1R4EcP, sni: z-v2-002797.kailib.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 13 → skywrt, server: 172.67.229.39, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
-  - {name: 🇺🇸 US 14 → skywrt, server: 172.67.143.192, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
-  - {name: 🇺🇸 US 15 → skywrt, server: kz-full.privateip.net, port: 443, type: trojan, password: 62011b3d-2706-4a97-98b7-9986003c5fe0, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 16 → skywrt, server: 172.67.168.34, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: marien.motorcycles}}, udp: true}
-  - {name: 🇺🇸 US 17 → skywrt, server: 47.76.185.99, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: "", host: ""}, udp: true}
-  - {name: 🇺🇸 US 18 → skywrt, server: 172.67.131.150, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oliv.beauty}}, udp: true}
-  - {name: 🇺🇸 US 19 → skywrt, server: 172.67.229.13, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
+  - {name: 🇺🇸 US 10 → skywrt, server: www.velvetmountain.shop, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
+  - {name: 🇺🇸 US 11 → skywrt, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 12 → skywrt, server: de-01.cloudlion.me, port: 8080, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de-01.cloudlion.me}}, udp: true}
+  - {name: 🇺🇸 US 13 → skywrt, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
+  - {name: 🇺🇸 US 14 → skywrt, server: 66.42.84.121, port: 443, type: trojan, password: wkmY1R4EcP, sni: z-v2-002797.kailib.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 15 → skywrt, server: 172.67.229.39, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
+  - {name: 🇺🇸 US 16 → skywrt, server: 172.67.143.192, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
+  - {name: 🇺🇸 US 17 → skywrt, server: kz-full.privateip.net, port: 443, type: trojan, password: 62011b3d-2706-4a97-98b7-9986003c5fe0, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 18 → skywrt, server: 172.67.168.34, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: marien.motorcycles}}, udp: true}
+  - {name: 🇺🇸 US 19 → skywrt, server: 47.76.185.99, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: "", host: ""}, udp: true}
   - {name: 🇺🇸 US 2 → skywrt, server: 38.121.43.142, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇺🇸 US 20 → skywrt, server: 172.67.196.110, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kellie.makeup}}, udp: true}
-  - {name: 🇺🇸 US 21 → skywrt, server: 38.68.134.9, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇺🇸 US 22 → skywrt, server: waynn.makeup, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: waynn.makeup}}, udp: true}
-  - {name: 🇺🇸 US 23 → skywrt, server: 172.67.136.12, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
-  - {name: 🇺🇸 US 24 → skywrt, server: 38.68.134.9, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇺🇸 US 25 → skywrt, server: 172.67.214.33, port: 2052, type: vmess, uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 🇺🇸 US 26 → skywrt, server: 38.75.136.135, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇸 US 27 → skywrt, server: 172.67.215.202, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: octavi.cfd}}, udp: true}
-  - {name: 🇺🇸 US 28 → skywrt, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
-  - {name: 🇺🇸 US 29 → skywrt, server: 205.134.180.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9Bvkw5aupNy8, udp: true}
+  - {name: 🇺🇸 US 20 → skywrt, server: 172.67.131.150, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oliv.beauty}}, udp: true}
+  - {name: 🇺🇸 US 21 → skywrt, server: 172.67.229.13, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
+  - {name: 🇺🇸 US 22 → skywrt, server: 172.67.196.110, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kellie.makeup}}, udp: true}
+  - {name: 🇺🇸 US 23 → skywrt, server: 38.68.134.9, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇺🇸 US 24 → skywrt, server: 172.67.136.12, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
+  - {name: 🇺🇸 US 25 → skywrt, server: 38.68.134.9, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 🇺🇸 US 26 → skywrt, server: 172.67.214.33, port: 2052, type: vmess, uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 🇺🇸 US 27 → skywrt, server: 38.75.136.135, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇺🇸 US 28 → skywrt, server: 172.67.215.202, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: octavi.cfd}}, udp: true}
+  - {name: 🇺🇸 US 29 → skywrt, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
   - {name: 🇺🇸 US 3 → skywrt, server: go.cococloud.online, port: 2082, type: vmess, uuid: 23337bcf-ea22-4efe-a0bc-8be84706c8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-01.cococloud.online}}, udp: true}
-  - {name: 🇺🇸 US 30 → skywrt, server: 172.67.229.35, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
-  - {name: 🇺🇸 US 31 → skywrt, server: 38.75.136.135, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇺🇸 US 32 → skywrt, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}, udp: true}
-  - {name: 🇺🇸 US 33 → skywrt, server: 172.67.207.114, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ophelia.mom}}, udp: true}
-  - {name: 🇺🇸 US 34 → skywrt, server: hkd1.quickerlink.xyz, port: 443, type: vmess, uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /h6jr23x9h3lqiitg, headers: {Host: hkd1.quickerlink.xyz}}, udp: true}
+  - {name: 🇺🇸 US 30 → skywrt, server: 205.134.180.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9Bvkw5aupNy8, udp: true}
+  - {name: 🇺🇸 US 31 → skywrt, server: 172.67.229.35, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
+  - {name: 🇺🇸 US 32 → skywrt, server: 38.75.136.135, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 🇺🇸 US 33 → skywrt, server: us-01.cococloud.online, port: 2082, type: vmess, uuid: 23337bcf-ea22-4efe-a0bc-8be84706c8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-01.cococloud.online}}, udp: true}
+  - {name: 🇺🇸 US 34 → skywrt, server: 172.67.207.114, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ophelia.mom}}, udp: true}
   - {name: 🇺🇸 US 35 → skywrt, server: odelia.autos, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: odelia.autos}}, udp: true}
   - {name: 🇺🇸 US 36 → skywrt, server: 205.134.180.151, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5cp9Z3iWnJZ2, udp: true}
   - {name: 🇺🇸 US 37 → skywrt, server: cf.openxai.link, port: 8080, type: vmess, uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu1.openxai.link}}, udp: true}
@@ -603,34 +604,31 @@ proxies:
   - {name: 🇺🇸 US 47 → skywrt, server: 172.67.214.33, port: 2052, type: vmess, uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
   - {name: 🇺🇸 US 48 → skywrt, server: 172.67.142.191, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: edeen.makeup}}, udp: true}
   - {name: 🇺🇸 US 49 → skywrt, server: cloudflare.cfgo.cc, port: 80, type: vmess, uuid: 22a13aa2-4854-44cb-e090-ec71ab84b1ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: wap.hostmjj.com}}, udp: true}
-  - {name: 🇺🇸 US 5 → skywrt, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 5 → skywrt, server: de-b.funhub.cc, port: 8443, type: vmess, uuid: b33155f0-7429-4f1c-97c4-a9ba24a3b1cf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de-b.funhub.cc}}, udp: true}
   - {name: 🇺🇸 US 50 → skywrt, server: 74.121.191.98, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: 🇺🇸 US 51 → skywrt, server: 172.67.229.34, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
-  - {name: 🇺🇸 US 52 → skywrt, server: us65.netfilx.live, port: 80, type: vmess, uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us65.netfilx.live}}, udp: true}
-  - {name: 🇺🇸 US 53 → skywrt, server: 172.67.174.63, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nina.bond}}, udp: true}
-  - {name: 🇺🇸 US 54 → skywrt, server: onea.flha.ru, port: 2052, type: vmess, uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 🇺🇸 US 55 → skywrt, server: 38.121.43.65, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇸 US 56 → skywrt, server: us.blazeppn.info, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 57 → skywrt, server: 172.67.183.110, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: waynn.makeup}}, udp: true}
-  - {name: 🇺🇸 US 58 → skywrt, server: passconf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN, udp: true}
-  - {name: 🇺🇸 US 59 → skywrt, server: kellie.makeup, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kellie.makeup}}, udp: true}
+  - {name: 🇺🇸 US 52 → skywrt, server: 172.67.174.63, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nina.bond}}, udp: true}
+  - {name: 🇺🇸 US 53 → skywrt, server: server32.beheshtbaneh.com, port: 8880, type: vmess, uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server32.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 54 → skywrt, server: 38.121.43.65, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇺🇸 US 55 → skywrt, server: us.blazeppn.info, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 56 → skywrt, server: 172.67.183.110, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: waynn.makeup}}, udp: true}
+  - {name: 🇺🇸 US 57 → skywrt, server: passconf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN, udp: true}
+  - {name: 🇺🇸 US 58 → skywrt, server: 205.134.180.145, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hgLCgfLRgB6d, udp: true}
+  - {name: 🇺🇸 US 59 → skywrt, server: 172.67.229.33, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
   - {name: 🇺🇸 US 6 → skywrt, server: 172.67.229.38, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
-  - {name: 🇺🇸 US 60 → skywrt, server: aws.daxun.cyou, port: 38887, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /daxun/us3, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 🇺🇸 US 61 → skywrt, server: 205.134.180.145, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hgLCgfLRgB6d, udp: true}
-  - {name: 🇺🇸 US 62 → skywrt, server: 172.67.229.33, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
-  - {name: 🇺🇸 US 63 → skywrt, server: cf.openxai.link, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu2.openxai.link}}, udp: true}
-  - {name: 🇺🇸 US 64 → skywrt, server: ophelia.mom, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ophelia.mom}}, udp: true}
-  - {name: 🇺🇸 US 65 → skywrt, server: 172.67.143.192, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
-  - {name: 🇺🇸 US 66 → skywrt, server: daxun.club, port: 38001, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 67 → skywrt, server: 38.75.136.135, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇺🇸 US 68 → skywrt, server: hms182.glweidf.sbs, port: 443, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: glweidf.sbs}}, udp: true}
-  - {name: 🇺🇸 US 69 → skywrt, server: 207.246.68.67, port: 443, type: trojan, password: wkmY1R4EcP, sni: z-v2-003338.kailib.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 7 → skywrt, server: 38.121.43.142, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇺🇸 US 70 → skywrt, server: 38.68.134.9, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇺🇸 US 71 → skywrt, server: www.ywnouvbale.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
-  - {name: 🇺🇸 US 72 → skywrt, server: 38.14.107.234, port: 38100, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.23179753.xyz}}, udp: true}
-  - {name: 🇺🇸 US 8 → skywrt, server: 172.67.201.200, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: maggiy.shop}}, udp: true}
-  - {name: 🇺🇸 US 9 → skywrt, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 60 → skywrt, server: cf.openxai.link, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu2.openxai.link}}, udp: true}
+  - {name: 🇺🇸 US 61 → skywrt, server: ophelia.mom, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ophelia.mom}}, udp: true}
+  - {name: 🇺🇸 US 62 → skywrt, server: 172.67.143.192, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
+  - {name: 🇺🇸 US 63 → skywrt, server: daxun.club, port: 38001, type: vmess, uuid: 79c69288-c178-42a7-bd8f-1635bd59a28e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 64 → skywrt, server: alvvin.click, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: alvvin.click}}, udp: true}
+  - {name: 🇺🇸 US 65 → skywrt, server: 38.75.136.135, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇸 US 66 → skywrt, server: 207.246.68.67, port: 443, type: trojan, password: wkmY1R4EcP, sni: z-v2-003338.kailib.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 67 → skywrt, server: 38.68.134.9, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇺🇸 US 68 → skywrt, server: www.ywnouvbale.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
+  - {name: 🇺🇸 US 69 → skywrt, server: 38.14.107.234, port: 38100, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.23179753.xyz}}, udp: true}
+  - {name: 🇺🇸 US 7 → skywrt, server: muriel.makeup, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: muriel.makeup}}, udp: true}
+  - {name: 🇺🇸 US 8 → skywrt, server: 38.121.43.142, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇸 US 9 → skywrt, server: 172.67.201.200, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: maggiy.shop}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -665,6 +663,7 @@ proxy-groups:
       - IE 2 → skywrt
       - IT 1 → skywrt
       - IT 2 → skywrt
+      - IT 3 → skywrt
       - KE 1 → skywrt
       - LU 1 → skywrt
       - LU 2 → skywrt
@@ -716,7 +715,7 @@ proxy-groups:
       - 🇨🇳 CN 11 → skywrt
       - 🇨🇳 CN 110 → skywrt
       - 🇨🇳 CN 111 → skywrt
-      - 🇨🇳 CN 113 → skywrt
+      - 🇨🇳 CN 112 → skywrt
       - 🇨🇳 CN 114 → skywrt
       - 🇨🇳 CN 115 → skywrt
       - 🇨🇳 CN 116 → skywrt
@@ -727,7 +726,7 @@ proxy-groups:
       - 🇨🇳 CN 120 → skywrt
       - 🇨🇳 CN 121 → skywrt
       - 🇨🇳 CN 122 → skywrt
-      - 🇨🇳 CN 124 → skywrt
+      - 🇨🇳 CN 123 → skywrt
       - 🇨🇳 CN 125 → skywrt
       - 🇨🇳 CN 126 → skywrt
       - 🇨🇳 CN 127 → skywrt
@@ -735,84 +734,89 @@ proxy-groups:
       - 🇨🇳 CN 129 → skywrt
       - 🇨🇳 CN 13 → skywrt
       - 🇨🇳 CN 130 → skywrt
-      - 🇨🇳 CN 132 → skywrt
+      - 🇨🇳 CN 131 → skywrt
       - 🇨🇳 CN 133 → skywrt
       - 🇨🇳 CN 134 → skywrt
-      - 🇨🇳 CN 138 → skywrt
-      - 🇨🇳 CN 139 → skywrt
+      - 🇨🇳 CN 135 → skywrt
+      - 🇨🇳 CN 136 → skywrt
       - 🇨🇳 CN 14 → skywrt
       - 🇨🇳 CN 140 → skywrt
+      - 🇨🇳 CN 141 → skywrt
       - 🇨🇳 CN 142 → skywrt
-      - 🇨🇳 CN 143 → skywrt
       - 🇨🇳 CN 144 → skywrt
       - 🇨🇳 CN 145 → skywrt
       - 🇨🇳 CN 146 → skywrt
       - 🇨🇳 CN 147 → skywrt
       - 🇨🇳 CN 148 → skywrt
+      - 🇨🇳 CN 149 → skywrt
       - 🇨🇳 CN 15 → skywrt
       - 🇨🇳 CN 150 → skywrt
       - 🇨🇳 CN 151 → skywrt
-      - 🇨🇳 CN 152 → skywrt
       - 🇨🇳 CN 153 → skywrt
+      - 🇨🇳 CN 154 → skywrt
       - 🇨🇳 CN 155 → skywrt
-      - 🇨🇳 CN 157 → skywrt
+      - 🇨🇳 CN 156 → skywrt
       - 🇨🇳 CN 158 → skywrt
-      - 🇨🇳 CN 159 → skywrt
       - 🇨🇳 CN 16 → skywrt
       - 🇨🇳 CN 160 → skywrt
       - 🇨🇳 CN 161 → skywrt
+      - 🇨🇳 CN 162 → skywrt
       - 🇨🇳 CN 163 → skywrt
-      - 🇨🇳 CN 165 → skywrt
+      - 🇨🇳 CN 164 → skywrt
       - 🇨🇳 CN 166 → skywrt
-      - 🇨🇳 CN 167 → skywrt
+      - 🇨🇳 CN 168 → skywrt
       - 🇨🇳 CN 169 → skywrt
       - 🇨🇳 CN 17 → skywrt
       - 🇨🇳 CN 170 → skywrt
-      - 🇨🇳 CN 171 → skywrt
       - 🇨🇳 CN 172 → skywrt
+      - 🇨🇳 CN 173 → skywrt
       - 🇨🇳 CN 174 → skywrt
       - 🇨🇳 CN 175 → skywrt
       - 🇨🇳 CN 176 → skywrt
-      - 🇨🇳 CN 177 → skywrt
+      - 🇨🇳 CN 178 → skywrt
+      - 🇨🇳 CN 179 → skywrt
       - 🇨🇳 CN 18 → skywrt
       - 🇨🇳 CN 180 → skywrt
-      - 🇨🇳 CN 182 → skywrt
-      - 🇨🇳 CN 183 → skywrt
+      - 🇨🇳 CN 181 → skywrt
       - 🇨🇳 CN 184 → skywrt
-      - 🇨🇳 CN 185 → skywrt
+      - 🇨🇳 CN 186 → skywrt
       - 🇨🇳 CN 187 → skywrt
       - 🇨🇳 CN 188 → skywrt
+      - 🇨🇳 CN 189 → skywrt
       - 🇨🇳 CN 19 → skywrt
-      - 🇨🇳 CN 191 → skywrt
-      - 🇨🇳 CN 194 → skywrt
-      - 🇨🇳 CN 195 → skywrt
+      - 🇨🇳 CN 190 → skywrt
+      - 🇨🇳 CN 192 → skywrt
+      - 🇨🇳 CN 193 → skywrt
       - 🇨🇳 CN 196 → skywrt
-      - 🇨🇳 CN 197 → skywrt
-      - 🇨🇳 CN 198 → skywrt
       - 🇨🇳 CN 199 → skywrt
       - 🇨🇳 CN 2 → skywrt
       - 🇨🇳 CN 20 → skywrt
       - 🇨🇳 CN 200 → skywrt
       - 🇨🇳 CN 201 → skywrt
-      - 🇨🇳 CN 206 → skywrt
-      - 🇨🇳 CN 207 → skywrt
-      - 🇨🇳 CN 208 → skywrt
-      - 🇨🇳 CN 209 → skywrt
+      - 🇨🇳 CN 202 → skywrt
+      - 🇨🇳 CN 203 → skywrt
+      - 🇨🇳 CN 204 → skywrt
+      - 🇨🇳 CN 205 → skywrt
       - 🇨🇳 CN 21 → skywrt
       - 🇨🇳 CN 210 → skywrt
+      - 🇨🇳 CN 211 → skywrt
+      - 🇨🇳 CN 212 → skywrt
       - 🇨🇳 CN 213 → skywrt
       - 🇨🇳 CN 214 → skywrt
-      - 🇨🇳 CN 217 → skywrt
+      - 🇨🇳 CN 215 → skywrt
       - 🇨🇳 CN 218 → skywrt
-      - 🇨🇳 CN 220 → skywrt
+      - 🇨🇳 CN 219 → skywrt
       - 🇨🇳 CN 222 → skywrt
       - 🇨🇳 CN 223 → skywrt
       - 🇨🇳 CN 225 → skywrt
-      - 🇨🇳 CN 226 → skywrt
       - 🇨🇳 CN 227 → skywrt
       - 🇨🇳 CN 228 → skywrt
-      - 🇨🇳 CN 229 → skywrt
       - 🇨🇳 CN 23 → skywrt
+      - 🇨🇳 CN 230 → skywrt
+      - 🇨🇳 CN 231 → skywrt
+      - 🇨🇳 CN 232 → skywrt
+      - 🇨🇳 CN 233 → skywrt
+      - 🇨🇳 CN 234 → skywrt
       - 🇨🇳 CN 24 → skywrt
       - 🇨🇳 CN 25 → skywrt
       - 🇨🇳 CN 26 → skywrt
@@ -888,12 +892,6 @@ proxy-groups:
       - 🇩🇪 DE 1 → skywrt
       - 🇩🇪 DE 2 → skywrt
       - 🇩🇪 DE 3 → skywrt
-      - 🇩🇪 DE 4 → skywrt
-      - 🇩🇪 DE 5 → skywrt
-      - 🇩🇪 DE 6 → skywrt
-      - 🇩🇪 DE 7 → skywrt
-      - 🇩🇪 DE 8 → skywrt
-      - 🇩🇪 DE 9 → skywrt
       - 🇪🇸 ES 1 → skywrt
       - 🇪🇸 ES 2 → skywrt
       - 🇪🇸 ES 3 → skywrt
@@ -978,6 +976,7 @@ proxy-groups:
       - 🇰🇷 KR 6 → skywrt
       - 🇰🇷 KR 7 → skywrt
       - 🇰🇷 KR 8 → skywrt
+      - 🇰🇷 KR 9 → skywrt
       - 🇳🇱 NL 1 → skywrt
       - 🇳🇱 NL 10 → skywrt
       - 🇳🇱 NL 11 → skywrt
@@ -1078,9 +1077,6 @@ proxy-groups:
       - 🇺🇸 US 68 → skywrt
       - 🇺🇸 US 69 → skywrt
       - 🇺🇸 US 7 → skywrt
-      - 🇺🇸 US 70 → skywrt
-      - 🇺🇸 US 71 → skywrt
-      - 🇺🇸 US 72 → skywrt
       - 🇺🇸 US 8 → skywrt
       - 🇺🇸 US 9 → skywrt
   - name: 💡 自动选择
@@ -1106,6 +1102,7 @@ proxy-groups:
       - IE 2 → skywrt
       - IT 1 → skywrt
       - IT 2 → skywrt
+      - IT 3 → skywrt
       - KE 1 → skywrt
       - LU 1 → skywrt
       - LU 2 → skywrt
@@ -1157,7 +1154,7 @@ proxy-groups:
       - 🇨🇳 CN 11 → skywrt
       - 🇨🇳 CN 110 → skywrt
       - 🇨🇳 CN 111 → skywrt
-      - 🇨🇳 CN 113 → skywrt
+      - 🇨🇳 CN 112 → skywrt
       - 🇨🇳 CN 114 → skywrt
       - 🇨🇳 CN 115 → skywrt
       - 🇨🇳 CN 116 → skywrt
@@ -1168,7 +1165,7 @@ proxy-groups:
       - 🇨🇳 CN 120 → skywrt
       - 🇨🇳 CN 121 → skywrt
       - 🇨🇳 CN 122 → skywrt
-      - 🇨🇳 CN 124 → skywrt
+      - 🇨🇳 CN 123 → skywrt
       - 🇨🇳 CN 125 → skywrt
       - 🇨🇳 CN 126 → skywrt
       - 🇨🇳 CN 127 → skywrt
@@ -1176,84 +1173,89 @@ proxy-groups:
       - 🇨🇳 CN 129 → skywrt
       - 🇨🇳 CN 13 → skywrt
       - 🇨🇳 CN 130 → skywrt
-      - 🇨🇳 CN 132 → skywrt
+      - 🇨🇳 CN 131 → skywrt
       - 🇨🇳 CN 133 → skywrt
       - 🇨🇳 CN 134 → skywrt
-      - 🇨🇳 CN 138 → skywrt
-      - 🇨🇳 CN 139 → skywrt
+      - 🇨🇳 CN 135 → skywrt
+      - 🇨🇳 CN 136 → skywrt
       - 🇨🇳 CN 14 → skywrt
       - 🇨🇳 CN 140 → skywrt
+      - 🇨🇳 CN 141 → skywrt
       - 🇨🇳 CN 142 → skywrt
-      - 🇨🇳 CN 143 → skywrt
       - 🇨🇳 CN 144 → skywrt
       - 🇨🇳 CN 145 → skywrt
       - 🇨🇳 CN 146 → skywrt
       - 🇨🇳 CN 147 → skywrt
       - 🇨🇳 CN 148 → skywrt
+      - 🇨🇳 CN 149 → skywrt
       - 🇨🇳 CN 15 → skywrt
       - 🇨🇳 CN 150 → skywrt
       - 🇨🇳 CN 151 → skywrt
-      - 🇨🇳 CN 152 → skywrt
       - 🇨🇳 CN 153 → skywrt
+      - 🇨🇳 CN 154 → skywrt
       - 🇨🇳 CN 155 → skywrt
-      - 🇨🇳 CN 157 → skywrt
+      - 🇨🇳 CN 156 → skywrt
       - 🇨🇳 CN 158 → skywrt
-      - 🇨🇳 CN 159 → skywrt
       - 🇨🇳 CN 16 → skywrt
       - 🇨🇳 CN 160 → skywrt
       - 🇨🇳 CN 161 → skywrt
+      - 🇨🇳 CN 162 → skywrt
       - 🇨🇳 CN 163 → skywrt
-      - 🇨🇳 CN 165 → skywrt
+      - 🇨🇳 CN 164 → skywrt
       - 🇨🇳 CN 166 → skywrt
-      - 🇨🇳 CN 167 → skywrt
+      - 🇨🇳 CN 168 → skywrt
       - 🇨🇳 CN 169 → skywrt
       - 🇨🇳 CN 17 → skywrt
       - 🇨🇳 CN 170 → skywrt
-      - 🇨🇳 CN 171 → skywrt
       - 🇨🇳 CN 172 → skywrt
+      - 🇨🇳 CN 173 → skywrt
       - 🇨🇳 CN 174 → skywrt
       - 🇨🇳 CN 175 → skywrt
       - 🇨🇳 CN 176 → skywrt
-      - 🇨🇳 CN 177 → skywrt
+      - 🇨🇳 CN 178 → skywrt
+      - 🇨🇳 CN 179 → skywrt
       - 🇨🇳 CN 18 → skywrt
       - 🇨🇳 CN 180 → skywrt
-      - 🇨🇳 CN 182 → skywrt
-      - 🇨🇳 CN 183 → skywrt
+      - 🇨🇳 CN 181 → skywrt
       - 🇨🇳 CN 184 → skywrt
-      - 🇨🇳 CN 185 → skywrt
+      - 🇨🇳 CN 186 → skywrt
       - 🇨🇳 CN 187 → skywrt
       - 🇨🇳 CN 188 → skywrt
+      - 🇨🇳 CN 189 → skywrt
       - 🇨🇳 CN 19 → skywrt
-      - 🇨🇳 CN 191 → skywrt
-      - 🇨🇳 CN 194 → skywrt
-      - 🇨🇳 CN 195 → skywrt
+      - 🇨🇳 CN 190 → skywrt
+      - 🇨🇳 CN 192 → skywrt
+      - 🇨🇳 CN 193 → skywrt
       - 🇨🇳 CN 196 → skywrt
-      - 🇨🇳 CN 197 → skywrt
-      - 🇨🇳 CN 198 → skywrt
       - 🇨🇳 CN 199 → skywrt
       - 🇨🇳 CN 2 → skywrt
       - 🇨🇳 CN 20 → skywrt
       - 🇨🇳 CN 200 → skywrt
       - 🇨🇳 CN 201 → skywrt
-      - 🇨🇳 CN 206 → skywrt
-      - 🇨🇳 CN 207 → skywrt
-      - 🇨🇳 CN 208 → skywrt
-      - 🇨🇳 CN 209 → skywrt
+      - 🇨🇳 CN 202 → skywrt
+      - 🇨🇳 CN 203 → skywrt
+      - 🇨🇳 CN 204 → skywrt
+      - 🇨🇳 CN 205 → skywrt
       - 🇨🇳 CN 21 → skywrt
       - 🇨🇳 CN 210 → skywrt
+      - 🇨🇳 CN 211 → skywrt
+      - 🇨🇳 CN 212 → skywrt
       - 🇨🇳 CN 213 → skywrt
       - 🇨🇳 CN 214 → skywrt
-      - 🇨🇳 CN 217 → skywrt
+      - 🇨🇳 CN 215 → skywrt
       - 🇨🇳 CN 218 → skywrt
-      - 🇨🇳 CN 220 → skywrt
+      - 🇨🇳 CN 219 → skywrt
       - 🇨🇳 CN 222 → skywrt
       - 🇨🇳 CN 223 → skywrt
       - 🇨🇳 CN 225 → skywrt
-      - 🇨🇳 CN 226 → skywrt
       - 🇨🇳 CN 227 → skywrt
       - 🇨🇳 CN 228 → skywrt
-      - 🇨🇳 CN 229 → skywrt
       - 🇨🇳 CN 23 → skywrt
+      - 🇨🇳 CN 230 → skywrt
+      - 🇨🇳 CN 231 → skywrt
+      - 🇨🇳 CN 232 → skywrt
+      - 🇨🇳 CN 233 → skywrt
+      - 🇨🇳 CN 234 → skywrt
       - 🇨🇳 CN 24 → skywrt
       - 🇨🇳 CN 25 → skywrt
       - 🇨🇳 CN 26 → skywrt
@@ -1329,12 +1331,6 @@ proxy-groups:
       - 🇩🇪 DE 1 → skywrt
       - 🇩🇪 DE 2 → skywrt
       - 🇩🇪 DE 3 → skywrt
-      - 🇩🇪 DE 4 → skywrt
-      - 🇩🇪 DE 5 → skywrt
-      - 🇩🇪 DE 6 → skywrt
-      - 🇩🇪 DE 7 → skywrt
-      - 🇩🇪 DE 8 → skywrt
-      - 🇩🇪 DE 9 → skywrt
       - 🇪🇸 ES 1 → skywrt
       - 🇪🇸 ES 2 → skywrt
       - 🇪🇸 ES 3 → skywrt
@@ -1419,6 +1415,7 @@ proxy-groups:
       - 🇰🇷 KR 6 → skywrt
       - 🇰🇷 KR 7 → skywrt
       - 🇰🇷 KR 8 → skywrt
+      - 🇰🇷 KR 9 → skywrt
       - 🇳🇱 NL 1 → skywrt
       - 🇳🇱 NL 10 → skywrt
       - 🇳🇱 NL 11 → skywrt
@@ -1519,9 +1516,6 @@ proxy-groups:
       - 🇺🇸 US 68 → skywrt
       - 🇺🇸 US 69 → skywrt
       - 🇺🇸 US 7 → skywrt
-      - 🇺🇸 US 70 → skywrt
-      - 🇺🇸 US 71 → skywrt
-      - 🇺🇸 US 72 → skywrt
       - 🇺🇸 US 8 → skywrt
       - 🇺🇸 US 9 → skywrt
   - name: 🇭🇰 香港节点
@@ -1650,9 +1644,6 @@ proxy-groups:
       - 🇺🇸 US 68 → skywrt
       - 🇺🇸 US 69 → skywrt
       - 🇺🇸 US 7 → skywrt
-      - 🇺🇸 US 70 → skywrt
-      - 🇺🇸 US 71 → skywrt
-      - 🇺🇸 US 72 → skywrt
       - 🇺🇸 US 8 → skywrt
       - 🇺🇸 US 9 → skywrt
   - name: 🇹🇼 台湾节点
@@ -1711,6 +1702,7 @@ proxy-groups:
       - 🇰🇷 KR 6 → skywrt
       - 🇰🇷 KR 7 → skywrt
       - 🇰🇷 KR 8 → skywrt
+      - 🇰🇷 KR 9 → skywrt
   - name: 🌍 其他地区
     type: select
     proxies:
@@ -1731,6 +1723,7 @@ proxy-groups:
       - IE 2 → skywrt
       - IT 1 → skywrt
       - IT 2 → skywrt
+      - IT 3 → skywrt
       - KE 1 → skywrt
       - LU 1 → skywrt
       - LU 2 → skywrt
@@ -1782,7 +1775,7 @@ proxy-groups:
       - 🇨🇳 CN 11 → skywrt
       - 🇨🇳 CN 110 → skywrt
       - 🇨🇳 CN 111 → skywrt
-      - 🇨🇳 CN 113 → skywrt
+      - 🇨🇳 CN 112 → skywrt
       - 🇨🇳 CN 114 → skywrt
       - 🇨🇳 CN 115 → skywrt
       - 🇨🇳 CN 116 → skywrt
@@ -1793,7 +1786,7 @@ proxy-groups:
       - 🇨🇳 CN 120 → skywrt
       - 🇨🇳 CN 121 → skywrt
       - 🇨🇳 CN 122 → skywrt
-      - 🇨🇳 CN 124 → skywrt
+      - 🇨🇳 CN 123 → skywrt
       - 🇨🇳 CN 125 → skywrt
       - 🇨🇳 CN 126 → skywrt
       - 🇨🇳 CN 127 → skywrt
@@ -1801,84 +1794,89 @@ proxy-groups:
       - 🇨🇳 CN 129 → skywrt
       - 🇨🇳 CN 13 → skywrt
       - 🇨🇳 CN 130 → skywrt
-      - 🇨🇳 CN 132 → skywrt
+      - 🇨🇳 CN 131 → skywrt
       - 🇨🇳 CN 133 → skywrt
       - 🇨🇳 CN 134 → skywrt
-      - 🇨🇳 CN 138 → skywrt
-      - 🇨🇳 CN 139 → skywrt
+      - 🇨🇳 CN 135 → skywrt
+      - 🇨🇳 CN 136 → skywrt
       - 🇨🇳 CN 14 → skywrt
       - 🇨🇳 CN 140 → skywrt
+      - 🇨🇳 CN 141 → skywrt
       - 🇨🇳 CN 142 → skywrt
-      - 🇨🇳 CN 143 → skywrt
       - 🇨🇳 CN 144 → skywrt
       - 🇨🇳 CN 145 → skywrt
       - 🇨🇳 CN 146 → skywrt
       - 🇨🇳 CN 147 → skywrt
       - 🇨🇳 CN 148 → skywrt
+      - 🇨🇳 CN 149 → skywrt
       - 🇨🇳 CN 15 → skywrt
       - 🇨🇳 CN 150 → skywrt
       - 🇨🇳 CN 151 → skywrt
-      - 🇨🇳 CN 152 → skywrt
       - 🇨🇳 CN 153 → skywrt
+      - 🇨🇳 CN 154 → skywrt
       - 🇨🇳 CN 155 → skywrt
-      - 🇨🇳 CN 157 → skywrt
+      - 🇨🇳 CN 156 → skywrt
       - 🇨🇳 CN 158 → skywrt
-      - 🇨🇳 CN 159 → skywrt
       - 🇨🇳 CN 16 → skywrt
       - 🇨🇳 CN 160 → skywrt
       - 🇨🇳 CN 161 → skywrt
+      - 🇨🇳 CN 162 → skywrt
       - 🇨🇳 CN 163 → skywrt
-      - 🇨🇳 CN 165 → skywrt
+      - 🇨🇳 CN 164 → skywrt
       - 🇨🇳 CN 166 → skywrt
-      - 🇨🇳 CN 167 → skywrt
+      - 🇨🇳 CN 168 → skywrt
       - 🇨🇳 CN 169 → skywrt
       - 🇨🇳 CN 17 → skywrt
       - 🇨🇳 CN 170 → skywrt
-      - 🇨🇳 CN 171 → skywrt
       - 🇨🇳 CN 172 → skywrt
+      - 🇨🇳 CN 173 → skywrt
       - 🇨🇳 CN 174 → skywrt
       - 🇨🇳 CN 175 → skywrt
       - 🇨🇳 CN 176 → skywrt
-      - 🇨🇳 CN 177 → skywrt
+      - 🇨🇳 CN 178 → skywrt
+      - 🇨🇳 CN 179 → skywrt
       - 🇨🇳 CN 18 → skywrt
       - 🇨🇳 CN 180 → skywrt
-      - 🇨🇳 CN 182 → skywrt
-      - 🇨🇳 CN 183 → skywrt
+      - 🇨🇳 CN 181 → skywrt
       - 🇨🇳 CN 184 → skywrt
-      - 🇨🇳 CN 185 → skywrt
+      - 🇨🇳 CN 186 → skywrt
       - 🇨🇳 CN 187 → skywrt
       - 🇨🇳 CN 188 → skywrt
+      - 🇨🇳 CN 189 → skywrt
       - 🇨🇳 CN 19 → skywrt
-      - 🇨🇳 CN 191 → skywrt
-      - 🇨🇳 CN 194 → skywrt
-      - 🇨🇳 CN 195 → skywrt
+      - 🇨🇳 CN 190 → skywrt
+      - 🇨🇳 CN 192 → skywrt
+      - 🇨🇳 CN 193 → skywrt
       - 🇨🇳 CN 196 → skywrt
-      - 🇨🇳 CN 197 → skywrt
-      - 🇨🇳 CN 198 → skywrt
       - 🇨🇳 CN 199 → skywrt
       - 🇨🇳 CN 2 → skywrt
       - 🇨🇳 CN 20 → skywrt
       - 🇨🇳 CN 200 → skywrt
       - 🇨🇳 CN 201 → skywrt
-      - 🇨🇳 CN 206 → skywrt
-      - 🇨🇳 CN 207 → skywrt
-      - 🇨🇳 CN 208 → skywrt
-      - 🇨🇳 CN 209 → skywrt
+      - 🇨🇳 CN 202 → skywrt
+      - 🇨🇳 CN 203 → skywrt
+      - 🇨🇳 CN 204 → skywrt
+      - 🇨🇳 CN 205 → skywrt
       - 🇨🇳 CN 21 → skywrt
       - 🇨🇳 CN 210 → skywrt
+      - 🇨🇳 CN 211 → skywrt
+      - 🇨🇳 CN 212 → skywrt
       - 🇨🇳 CN 213 → skywrt
       - 🇨🇳 CN 214 → skywrt
-      - 🇨🇳 CN 217 → skywrt
+      - 🇨🇳 CN 215 → skywrt
       - 🇨🇳 CN 218 → skywrt
-      - 🇨🇳 CN 220 → skywrt
+      - 🇨🇳 CN 219 → skywrt
       - 🇨🇳 CN 222 → skywrt
       - 🇨🇳 CN 223 → skywrt
       - 🇨🇳 CN 225 → skywrt
-      - 🇨🇳 CN 226 → skywrt
       - 🇨🇳 CN 227 → skywrt
       - 🇨🇳 CN 228 → skywrt
-      - 🇨🇳 CN 229 → skywrt
       - 🇨🇳 CN 23 → skywrt
+      - 🇨🇳 CN 230 → skywrt
+      - 🇨🇳 CN 231 → skywrt
+      - 🇨🇳 CN 232 → skywrt
+      - 🇨🇳 CN 233 → skywrt
+      - 🇨🇳 CN 234 → skywrt
       - 🇨🇳 CN 24 → skywrt
       - 🇨🇳 CN 25 → skywrt
       - 🇨🇳 CN 26 → skywrt
@@ -1942,12 +1940,6 @@ proxy-groups:
       - 🇩🇪 DE 1 → skywrt
       - 🇩🇪 DE 2 → skywrt
       - 🇩🇪 DE 3 → skywrt
-      - 🇩🇪 DE 4 → skywrt
-      - 🇩🇪 DE 5 → skywrt
-      - 🇩🇪 DE 6 → skywrt
-      - 🇩🇪 DE 7 → skywrt
-      - 🇩🇪 DE 8 → skywrt
-      - 🇩🇪 DE 9 → skywrt
       - 🇪🇸 ES 1 → skywrt
       - 🇪🇸 ES 2 → skywrt
       - 🇪🇸 ES 3 → skywrt
@@ -2021,6 +2013,7 @@ proxy-groups:
       - IE 2 → skywrt
       - IT 1 → skywrt
       - IT 2 → skywrt
+      - IT 3 → skywrt
       - KE 1 → skywrt
       - LU 1 → skywrt
       - LU 2 → skywrt
@@ -2072,7 +2065,7 @@ proxy-groups:
       - 🇨🇳 CN 11 → skywrt
       - 🇨🇳 CN 110 → skywrt
       - 🇨🇳 CN 111 → skywrt
-      - 🇨🇳 CN 113 → skywrt
+      - 🇨🇳 CN 112 → skywrt
       - 🇨🇳 CN 114 → skywrt
       - 🇨🇳 CN 115 → skywrt
       - 🇨🇳 CN 116 → skywrt
@@ -2083,7 +2076,7 @@ proxy-groups:
       - 🇨🇳 CN 120 → skywrt
       - 🇨🇳 CN 121 → skywrt
       - 🇨🇳 CN 122 → skywrt
-      - 🇨🇳 CN 124 → skywrt
+      - 🇨🇳 CN 123 → skywrt
       - 🇨🇳 CN 125 → skywrt
       - 🇨🇳 CN 126 → skywrt
       - 🇨🇳 CN 127 → skywrt
@@ -2091,84 +2084,89 @@ proxy-groups:
       - 🇨🇳 CN 129 → skywrt
       - 🇨🇳 CN 13 → skywrt
       - 🇨🇳 CN 130 → skywrt
-      - 🇨🇳 CN 132 → skywrt
+      - 🇨🇳 CN 131 → skywrt
       - 🇨🇳 CN 133 → skywrt
       - 🇨🇳 CN 134 → skywrt
-      - 🇨🇳 CN 138 → skywrt
-      - 🇨🇳 CN 139 → skywrt
+      - 🇨🇳 CN 135 → skywrt
+      - 🇨🇳 CN 136 → skywrt
       - 🇨🇳 CN 14 → skywrt
       - 🇨🇳 CN 140 → skywrt
+      - 🇨🇳 CN 141 → skywrt
       - 🇨🇳 CN 142 → skywrt
-      - 🇨🇳 CN 143 → skywrt
       - 🇨🇳 CN 144 → skywrt
       - 🇨🇳 CN 145 → skywrt
       - 🇨🇳 CN 146 → skywrt
       - 🇨🇳 CN 147 → skywrt
       - 🇨🇳 CN 148 → skywrt
+      - 🇨🇳 CN 149 → skywrt
       - 🇨🇳 CN 15 → skywrt
       - 🇨🇳 CN 150 → skywrt
       - 🇨🇳 CN 151 → skywrt
-      - 🇨🇳 CN 152 → skywrt
       - 🇨🇳 CN 153 → skywrt
+      - 🇨🇳 CN 154 → skywrt
       - 🇨🇳 CN 155 → skywrt
-      - 🇨🇳 CN 157 → skywrt
+      - 🇨🇳 CN 156 → skywrt
       - 🇨🇳 CN 158 → skywrt
-      - 🇨🇳 CN 159 → skywrt
       - 🇨🇳 CN 16 → skywrt
       - 🇨🇳 CN 160 → skywrt
       - 🇨🇳 CN 161 → skywrt
+      - 🇨🇳 CN 162 → skywrt
       - 🇨🇳 CN 163 → skywrt
-      - 🇨🇳 CN 165 → skywrt
+      - 🇨🇳 CN 164 → skywrt
       - 🇨🇳 CN 166 → skywrt
-      - 🇨🇳 CN 167 → skywrt
+      - 🇨🇳 CN 168 → skywrt
       - 🇨🇳 CN 169 → skywrt
       - 🇨🇳 CN 17 → skywrt
       - 🇨🇳 CN 170 → skywrt
-      - 🇨🇳 CN 171 → skywrt
       - 🇨🇳 CN 172 → skywrt
+      - 🇨🇳 CN 173 → skywrt
       - 🇨🇳 CN 174 → skywrt
       - 🇨🇳 CN 175 → skywrt
       - 🇨🇳 CN 176 → skywrt
-      - 🇨🇳 CN 177 → skywrt
+      - 🇨🇳 CN 178 → skywrt
+      - 🇨🇳 CN 179 → skywrt
       - 🇨🇳 CN 18 → skywrt
       - 🇨🇳 CN 180 → skywrt
-      - 🇨🇳 CN 182 → skywrt
-      - 🇨🇳 CN 183 → skywrt
+      - 🇨🇳 CN 181 → skywrt
       - 🇨🇳 CN 184 → skywrt
-      - 🇨🇳 CN 185 → skywrt
+      - 🇨🇳 CN 186 → skywrt
       - 🇨🇳 CN 187 → skywrt
       - 🇨🇳 CN 188 → skywrt
+      - 🇨🇳 CN 189 → skywrt
       - 🇨🇳 CN 19 → skywrt
-      - 🇨🇳 CN 191 → skywrt
-      - 🇨🇳 CN 194 → skywrt
-      - 🇨🇳 CN 195 → skywrt
+      - 🇨🇳 CN 190 → skywrt
+      - 🇨🇳 CN 192 → skywrt
+      - 🇨🇳 CN 193 → skywrt
       - 🇨🇳 CN 196 → skywrt
-      - 🇨🇳 CN 197 → skywrt
-      - 🇨🇳 CN 198 → skywrt
       - 🇨🇳 CN 199 → skywrt
       - 🇨🇳 CN 2 → skywrt
       - 🇨🇳 CN 20 → skywrt
       - 🇨🇳 CN 200 → skywrt
       - 🇨🇳 CN 201 → skywrt
-      - 🇨🇳 CN 206 → skywrt
-      - 🇨🇳 CN 207 → skywrt
-      - 🇨🇳 CN 208 → skywrt
-      - 🇨🇳 CN 209 → skywrt
+      - 🇨🇳 CN 202 → skywrt
+      - 🇨🇳 CN 203 → skywrt
+      - 🇨🇳 CN 204 → skywrt
+      - 🇨🇳 CN 205 → skywrt
       - 🇨🇳 CN 21 → skywrt
       - 🇨🇳 CN 210 → skywrt
+      - 🇨🇳 CN 211 → skywrt
+      - 🇨🇳 CN 212 → skywrt
       - 🇨🇳 CN 213 → skywrt
       - 🇨🇳 CN 214 → skywrt
-      - 🇨🇳 CN 217 → skywrt
+      - 🇨🇳 CN 215 → skywrt
       - 🇨🇳 CN 218 → skywrt
-      - 🇨🇳 CN 220 → skywrt
+      - 🇨🇳 CN 219 → skywrt
       - 🇨🇳 CN 222 → skywrt
       - 🇨🇳 CN 223 → skywrt
       - 🇨🇳 CN 225 → skywrt
-      - 🇨🇳 CN 226 → skywrt
       - 🇨🇳 CN 227 → skywrt
       - 🇨🇳 CN 228 → skywrt
-      - 🇨🇳 CN 229 → skywrt
       - 🇨🇳 CN 23 → skywrt
+      - 🇨🇳 CN 230 → skywrt
+      - 🇨🇳 CN 231 → skywrt
+      - 🇨🇳 CN 232 → skywrt
+      - 🇨🇳 CN 233 → skywrt
+      - 🇨🇳 CN 234 → skywrt
       - 🇨🇳 CN 24 → skywrt
       - 🇨🇳 CN 25 → skywrt
       - 🇨🇳 CN 26 → skywrt
@@ -2244,12 +2242,6 @@ proxy-groups:
       - 🇩🇪 DE 1 → skywrt
       - 🇩🇪 DE 2 → skywrt
       - 🇩🇪 DE 3 → skywrt
-      - 🇩🇪 DE 4 → skywrt
-      - 🇩🇪 DE 5 → skywrt
-      - 🇩🇪 DE 6 → skywrt
-      - 🇩🇪 DE 7 → skywrt
-      - 🇩🇪 DE 8 → skywrt
-      - 🇩🇪 DE 9 → skywrt
       - 🇪🇸 ES 1 → skywrt
       - 🇪🇸 ES 2 → skywrt
       - 🇪🇸 ES 3 → skywrt
@@ -2334,6 +2326,7 @@ proxy-groups:
       - 🇰🇷 KR 6 → skywrt
       - 🇰🇷 KR 7 → skywrt
       - 🇰🇷 KR 8 → skywrt
+      - 🇰🇷 KR 9 → skywrt
       - 🇳🇱 NL 1 → skywrt
       - 🇳🇱 NL 10 → skywrt
       - 🇳🇱 NL 11 → skywrt
@@ -2434,9 +2427,6 @@ proxy-groups:
       - 🇺🇸 US 68 → skywrt
       - 🇺🇸 US 69 → skywrt
       - 🇺🇸 US 7 → skywrt
-      - 🇺🇸 US 70 → skywrt
-      - 🇺🇸 US 71 → skywrt
-      - 🇺🇸 US 72 → skywrt
       - 🇺🇸 US 8 → skywrt
       - 🇺🇸 US 9 → skywrt
   - name: 👉 国内网站
